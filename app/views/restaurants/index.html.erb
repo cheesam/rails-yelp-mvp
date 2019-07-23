@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Restaurants</title>
+</head>
+<body>
+  <div>
+  <h1>All restaurants</h1>
+    <% @restaurant.each do |restaurant| %>
+        <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+    <% end %>
+  </div>
+</body>
+</html>
